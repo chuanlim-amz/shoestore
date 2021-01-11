@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Step 6: Create Navigation xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.chuanlim.shoestore.LoginFragment"
+        android:label="@string/title_activity_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_shoeListingFragment"
+            app:destination="@id/shoeListingFragment" />
+        <argument
+            android:name="firstTimeUser"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.chuanlim.shoestore.WelcomeFragment"
+        android:label="@string/title_fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment2"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionFragment"
+        android:name="com.chuanlim.shoestore.InstructionFragment"
+        android:label="@string/title_instruction">
+        <action
+            android:id="@+id/action_instructionFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_instructionFragment_to_shoeListingFragment"
+            app:destination="@id/shoeListingFragment" />
+        <action
+            android:id="@+id/action_instructionFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeListingFragment"
+        android:name="com.chuanlim.shoestore.ShoeListingFragment"
+        android:label="@string/title_shoelisting_fragment">
+        <action
+            android:id="@+id/action_shoeListingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_shoeListingFragment_to_saveShoeDetailFragment"
+            app:destination="@id/saveShoeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saveShoeDetailFragment"
+        android:name="com.chuanlim.shoestore.SaveShoeDetailFragment"
+        android:label="@string/title_fragment_save_shoe">
+        <action
+            android:id="@+id/action_saveShoeDetailFragment_to_shoeListingFragment"
+            app:destination="@id/shoeListingFragment" />
+    </fragment>
+</navigation>

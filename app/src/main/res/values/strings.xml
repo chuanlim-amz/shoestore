@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="title_activity_login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="label_username">Username</string>
+    <string name="label_password">Password</string>
+    <string name="title_fragment_welcome">Welcome To Shoe Inventory App</string>
+    <string name="subtitle_welcome">Welcome to Shoe Inventory App by Chuan Lim. This app will show you a list of shoes and details of each shoes. Please click \'Next\' to see the detail instructions.</string>
+    <string name="button_next">NEXT</string>
+    <string name="title_instruction">Instructions</string>
+    <string name="subtitle_instruction">This is the instruction of how to use it:\n1. Click on the shoe required\n2. See the details of the shoe\n3. If you like it, buy it</string>
+    <string name="menu_logout">Logout</string>
+    <string name="title_shoelisting_fragment">Shoes</string>
+    <string name="label_shoe_name">Shoe Name</string>
+    <string name="label_shoe_size">Shoe Size</string>
+    <string name="label_company">Company</string>
+    <string name="label_description">Description</string>
+    <string name="btn_save">SAVE</string>
+    <string name="title_fragment_save_shoe">Enter Shoe Details</string>
+    <string name="text_empty_shoe_listing">Shoe Listing is empty now. Please click \'add\' to add some shoes</string>
+</resources>
